@@ -1,65 +1,163 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
-    <title>Cost Management Dashboard</title>
+<title>Cost Management Dashboard</title>
 </head>
+ 
 <body>
-    <h1>Cost Management Dashboard - Ansible Automation Platform (AAP)</h1>
-    <table border="1">
+<h1>Cost Management Dashboard - Ansible Automation Platform (AAP)</h1>
+ 
+    <table>
+<tr>
+<th>Job Template Name</th>
+<th>Description</th>
+<th>Owner</th>
+<th>Development Time (hours)</th>
+<th>Development Cost</th>
+<th>Maintenance Cost</th>
+<th>Total Job Execution Cost</th>
+<th>Manual Task Duration (hours)</th>
+<th>Manual Task Cost (per request)</th>
+<th>Task Frequency</th>
+<th>Automated FTE Count</th>
+<th>Automated FTE Hours</th>
+<th>Job Runs (Year-to-Date)</th>
+<th>Job Runs (Weekly)</th>
+<th>ROI per annum (YTD)</th>
+<th>ROI per week (avg)</th>
+</tr>
+ 
         <tr>
-            <th>Job Template Name</th>
-            <th>Description</th>
-            <th>Owner</th>
-            <th>Development Time (hours)</th>
-            <th>Development Cost</th>
-            <th>Maintenance Cost</th>
-            <th>Total Job Execution Cost</th>
-            <th>Manual Task Duration (hours)</th>
-            <th>Manual Task Cost (per request)</th>
-            <th>Task Frequency</th>
-            <th>Automated FTE Count</th>
-            <th>Automated FTE Hours</th>
-            <th>Job Runs (Year-to-Date)</th>
-            <th>Job Runs (Weekly)</th>
-            <th>ROI per annum (YTD)</th>
-            <th>ROI per week (avg)</th>
-        </tr>
+<td>venafi_port_monitoring</td>
+<td>venafi_port_monitoring</td>
+<td>Automation Platform Management Team</td>
+<td>40</td>
+<td>$2400</td>
+<td>$0</td>
+<td>$2400</td>
+<td>3</td>
+<td>$180</td>
+<td>Daily</td>
+<td>1</td>
+<td>76</td>
+<td>572</td>
+<td>76</td>
+<td>$102913</td>
+<td>$13633</td>
+</tr>
+ 
         <tr>
-            <td>venafi_port_monitoring</td>
-            <td>venafi_port_monitoring</td>
-            <td>Automation Platform Management Team</td>
-            <td>40</td>
-            <td>$2400</td>
-            <td>$0</td>
-            <td>$2400</td>
-            <td>3</td>
-            <td>$180</td>
-            <td>Daily</td>
-            <td>1</td>
-            <td>76</td>
-            <td>572</td>
-            <td>76</td>
-            <td>$102913</td>
-            <td>$13633</td>
-        </tr>
+<td>jobtemplate_nbu_failure_alerts</td>
+<td>jobtemplate_nbu_failure_alerts</td>
+<td>StorageNetbackup Team</td>
+<td>120</td>
+<td>$7200</td>
+<td>$960</td>
+<td>$8160</td>
+<td>12</td>
+<td>$720</td>
+<td>Daily</td>
+<td>0</td>
+<td>6</td>
+<td>24</td>
+<td>1</td>
+<td>$-32778</td>
+<td>$-378</td>
+</tr>
+ 
         <tr>
-            <td>jobtemplate_nbu_failure_alerts</td>
-            <td>jobtemplate_nbu_failure_alerts</td>
-            <td>StorageNetbackup Team</td>
-            <td>120</td>
-            <td>$7200</td>
-            <td>$960</td>
-            <td>$8160</td>
-            <td>12</td>
-            <td>$720</td>
-            <td>Daily</td>
-            <td>0</td>
-            <td>6</td>
-            <td>24</td>
-            <td>1</td>
-            <td>$-32778</td>
-            <td>$-378</td>
-        </tr>
-    </table>
+<td>platform_management_validate_workspace</td>
+<td>Tests workspace functions</td>
+<td>Automation Platform Management Team</td>
+<td>64</td>
+<td>$3840</td>
+<td>$0</td>
+<td>$3840</td>
+<td>4</td>
+<td>$240</td>
+<td>Weekly</td>
+<td>0</td>
+<td>28</td>
+<td>120</td>
+<td>14</td>
+<td>$28726</td>
+<td>$3286</td>
+</tr>
+ 
+        <tr>
+<td>job_template_server_connectivity_check_custom_windows</td>
+<td>job_template_server_connectivity_check_custom_windows</td>
+<td>Wintel Hosting Team</td>
+<td>N/A</td>
+<td>$0</td>
+<td>$0</td>
+<td>$0</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>f5-daily-backup-prod-scp</td>
+<td>Performs backup on the production F5 inventory using scp</td>
+<td>Security Infrastructure Networks Support - f5</td>
+<td>32</td>
+<td>$1920</td>
+<td>$120</td>
+<td>$2040</td>
+<td>2</td>
+<td>$120</td>
+<td>N/A</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>$-6036</td>
+<td>$-156</td>
+</tr>
+<tr>
+<td>jobtemplate_Midrange_Missing_OS_Patch_List</td>
+<td>Playbook for generate report for missing OS Patches</td>
+<td>Midrange Enineering Support</td>
+<td>24</td>
+<td>$1440</td>
+<td>$120</td>
+<td>$1560</td>
+<td>12</td>
+<td>$720</td>
+<td>N/A</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>$-4827</td>
+<td>$-147</td>
+</tr
+<tr>
+<td>server_connectivity_check_custom_midrange</td>
+<td>server_connectivity_check_custom_midrange</td>
+<td>Wintel Hosting Team</td>
+<td>N/A</td>
+<td>$0</td>
+<td>$0</td>
+<td>$0</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table>
 </body>
+ 
 </html>
